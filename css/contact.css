@@ -140,14 +140,6 @@
     border-bottom: 4px solid #c01b22;
 }
 
-.contact {
-    background-image: url("../../images/service-info-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: calc(100vh - 96px);
-}
-
 .contact .contact-section {
     padding: 40px 0;
     display: flex;
@@ -223,4 +215,29 @@
 
 .contact .contact-section .r-section button:hover {
     opacity: 0.7;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .contact .contact-section {
+        padding: 3rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .contact .contact-section {
+        padding: 3rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .contact .contact-section {
+        padding: 3rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .contact .contact-section {
+        padding: 3rem 2rem;
+    }
 }
