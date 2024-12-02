@@ -1,0 +1,226 @@
+.nav {
+    background-color: #0852ae;
+}
+
+.nav .nav-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    gap: 30px;
+}
+
+.nav .nav-section .logo {
+    position: relative;
+    border-right: 1px solid #ddd;
+    padding: 5px 10px 5px 0;
+    top: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .nav .nav-section .logo {
+        left: 20px;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .nav .nav-section .logo {
+        left: 20px;
+    }
+}
+
+.nav .nav-section .bars {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .nav .nav-section .bars {
+        display: block;
+        color: #fff;
+        font-size: 2em;
+        position: absolute;
+        top: 30px;
+        right: 25px;
+        cursor: pointer;
+    }
+}
+
+.nav .nav-section .side-bar {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .nav .nav-section .side-bar {
+        display: block;
+        transform: translateX(700px);
+        background-color: #fff;
+        position: fixed;
+        list-style: none;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        padding-top: 50px;
+        width: 70%;
+        height: 100vh;
+        z-index: 99;
+        transition: transform 0.5s;
+    }
+
+    .nav .nav-section .side-bar.active {
+        transform: translateX(0);
+    }
+
+    .nav .nav-section .side-bar .fa {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    .nav .nav-section .side-bar li {
+        padding: 10px;
+    }
+
+    .nav .nav-section .side-bar li a {
+        text-decoration: none;
+        color: #000;
+        width: 100%;
+        padding: 10px 30px;
+    }
+
+    .nav .nav-section .side-bar li:hover {
+        background-color: #0852ae;
+    }
+
+    .nav .nav-section .side-bar li:hover a {
+        color: #fff;
+    }
+}
+
+.nav .nav-section .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4rem;
+    list-style-type: none;
+    width: 100%;
+}
+
+@media (min-width: 1200px) and (max-width: 1460px) {
+    .nav .nav-section .nav-bar {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .nav .nav-section .nav-bar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .nav .nav-section .nav-bar {
+        display: none;
+    }
+}
+
+.nav .nav-section .nav-bar li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: 0.1s;
+}
+
+.nav .nav-section .nav-bar li a.active {
+    border-bottom: 4px solid #c01b22;
+}
+
+.nav .nav-section .nav-bar li a:hover {
+    border-bottom: 4px solid #c01b22;
+}
+
+.contact {
+    background-image: url("../../images/service-info-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 96px);
+}
+
+.contact .contact-section {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 80px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .contact .contact-section {
+        display: block;
+        padding: 150px 50px;
+    }
+}
+
+.contact .contact-section .l-section {
+    width: 45%;
+    padding: 10px 0 0 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .contact .contact-section .l-section {
+        width: 100%;
+    }
+}
+
+.contact .contact-section .l-section h1 {
+    color: #0852ae;
+    text-transform: uppercase;
+}
+
+.contact .contact-section .l-section p {
+    margin: 20px 0;
+    border-left: 2px solid #c01b22;
+    padding: 0 0 0 15px;
+}
+
+.contact .contact-section .r-section {
+    width: 55%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .contact .contact-section .r-section {
+        width: 100%;
+    }
+}
+
+.contact .contact-section .r-section .input-container {
+    margin: 15px 0;
+}
+
+.contact .contact-section .r-section .input-container label {
+    display: block;
+    margin: 10px 0;
+}
+
+.contact .contact-section .r-section .input-container textarea {
+    resize: none;
+    height: 130px;
+}
+
+.contact .contact-section .r-section button {
+    background-color: #c01b22;
+    color: #fff;
+    padding: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: 0.2s;
+}
+
+.contact .contact-section .r-section button:hover {
+    opacity: 0.7;
+}
