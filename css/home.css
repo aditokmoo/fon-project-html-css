@@ -181,6 +181,7 @@
 @media only screen and (max-width: 630px) {
     .hero-section .header .header-section .side h1 {
         padding: 0;
+        font-size: 1.8rem;
     }
 }
 
@@ -802,22 +803,28 @@
     justify-content: center;
     gap: 70px;
     margin: 50px 0;
+    
+}
+
+.repair-service .repair-service-section .cards p {
+    max-height: 500px;
+    min-height: 300px;
+    height: 100%;
 }
 
 @media only screen and (max-width: 1200px) {
     .repair-service .repair-service-section .cards {
         display: block;
     }
-}
 
-@media only screen and (max-width: 1200px) {
     .repair-service .repair-service-section .cards .card {
         width: 70%;
         margin: 50px auto;
     }
 
     .repair-service .repair-service-section .cards .card p {
-        height: 100%;
+        max-height: 500px;
+        min-height: 350px;
     }
 }
 
@@ -827,7 +834,7 @@
     }
 
     .repair-service .repair-service-section .cards .card p {
-        height: 500px;
+        height: 450px;
     }
 }
 
@@ -837,7 +844,8 @@
     }
 
     .repair-service .repair-service-section .cards .card p {
-        height: 500px;
+        max-height: 500px;
+        min-height: 350px;
     }
 }
 
