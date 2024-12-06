@@ -11,6 +11,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <script src='./js/index.js' defer></script>
 </head>
+
 <body>
     <div class="mainWrapper">
         <nav class="nav">
@@ -26,7 +27,7 @@
                         <li><a href="/products.html">Proizvodi</a></li>
                         <li><a href="/contact.html">Kontakt</a></li>
                     </ul>
-        
+
                     <!-- Side bar -->
                     <div class="bars">
                         <i class="fa fa-bars" id="open-btn"></i>
@@ -42,7 +43,7 @@
                 </div>
             </div>
         </nav>
-        
+
         <section class="contact" id="#contact">
             <div class="container">
                 <div class="contact-section">
@@ -54,22 +55,47 @@
                     <div class="r-section">
                         <form>
                             <div class="input-container">
-                                <label>Ime i Prezime</label>
-                                <input type="text" placeholder="John Appleseed">
+                                <label for="name">Ime i Prezime</label>
+                                <input type="text" placeholder="John Appleseed" id="name">
                             </div>
                             <div class="input-container">
-                                <label>Email</label>
-                                <input type="email" placeholder="johnappleseeed@monadlead.com">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="johnappleseeed@monadlead.com" id="email">
                             </div>
                             <div class="input-container">
-                                <label>Broj telefona</label>
-                                <input type="text" placeholder="Predmet vaše poruke">
+                                <label for="phoneNumber">Broj telefona</label>
+                                <input type="text" placeholder="Predmet vaše poruke" id="phoneNumber">
                             </div>
                             <div class="input-container">
-                                <label>Vaša poruka</label>
-                                <textarea placeholder="Molimo unesite svoju poruku ovde..."></textarea>
+                                <label for="country">Država</label>
+                                <select name="country" id="country">
+                                    <option value="bih">Bosna</option>
+                                    <option value="bih">Srbija</option>
+                                    <option value="bih">Hrvatska</option>
+                                    <option value="bih">Crna Gora</option>
+                                    <option value="bih">Makedonija</option>
+                                    <option value="bih">Slovenija</option>
+                                </select>
                             </div>
-        
+                            <div class="input-container">
+                                <label for="gender">Spol</label>
+                                <div class="gender">
+                                    <div class="radio-input">
+                                        <input type="radio" id="male" name="gender" value="male">
+                                        <label for="male">Muško</label>
+                                    </div>
+                                    <div class="radio-input">
+                                        <input type="radio" id="female" name="gender" value="female">
+                                        <label for="female">Žensko</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-container">
+                                <label for="message">Vaša poruka</label>
+                                <textarea placeholder="Molimo unesite svoju poruku ovde..." id="message"></textarea>
+                            </div>
+
                             <button>Pošalji poruku</button>
                         </form>
                     </div>
@@ -78,4 +104,5 @@
         </section>
     </div>
 </body>
+
 </html>

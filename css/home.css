@@ -4,6 +4,48 @@
     height: 700px;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0.1;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromLeft {
+    from {
+        transform: translateX(-200px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInFromRight {
+    from {
+        transform: translateX(200px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .hero-section {
         height: 100%;
@@ -383,6 +425,9 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    animation: fadeUp linear;
+    animation-range: entry 0;
+    animation-timeline: view();
 }
 
 @media only screen and (max-width: 1200px) {
@@ -597,6 +642,9 @@
     height: 180px;
     display: block;
     z-index: 9999;
+    animation: fadeIn linear;
+    animation-range: entry 0;
+    animation-timeline: view();
 }
 
 .issue .issue-section .item.item-1 .image-wrapper::after {
@@ -608,6 +656,9 @@
     height: 180px;
     display: block;
     z-index: 9999;
+    animation: fadeIn linear;
+    animation-range: entry 0;
+    animation-timeline: view();
 }
 
 .issue .issue-section .item.item-1 .image-wrapper .image {
@@ -619,6 +670,9 @@
     clip-path: polygon(0 0, 100% 14%, 100% 100%, 4% 100%);
     z-index: 51;
     width: 100%;
+    animation: fadeInFromRight linear;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 
 .issue .issue-section .item.item-1 .content {
@@ -653,6 +707,9 @@
     left: 50px;
     top: -10px;
     z-index: 999;
+    animation: fadeIn linear;
+    animation-range: entry 0;
+    animation-timeline: view();
 }
 
 .issue .issue-section .item.item-2 .image-wrapper::after {
@@ -664,6 +721,9 @@
     right: 300px;
     bottom: -160px;
     z-index: -1;
+    animation: fadeIn linear;
+    animation-range: entry 0;
+    animation-timeline: view();
 }
 
 .issue .issue-section .item.item-2 .image-wrapper .image {
@@ -673,6 +733,9 @@
     background-position: center;
     clip-path: polygon(0 9%, 100% 0, 95% 100%, 0% 100%);
     width: 100%;
+    animation: fadeInFromLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 
 .issue .issue-section .item.item-3 .image-wrapper {
@@ -692,6 +755,9 @@
     left: 50px;
     top: -70px;
     z-index: -1;
+    animation: fadeIn linear;
+    animation-range: entry 0;
+    animation-timeline: view();
 }
 
 .issue .issue-section .item.item-3 .image-wrapper::after {
@@ -703,6 +769,9 @@
     right: 130px;
     bottom: -100px;
     z-index: 999;
+    animation: fadeIn linear;
+    animation-range: entry 0;
+    animation-timeline: view();
 }
 
 .issue .issue-section .item.item-3 .image-wrapper .image {
@@ -712,6 +781,9 @@
     background-position: center;
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
     width: 100%;
+    animation: fadeInFromRight linear;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 
 .issue .issue-section .item.item-3 .content {
@@ -742,6 +814,9 @@
     right: 50px;
     top: 0;
     z-index: 999;
+    animation: fadeIn linear;
+    animation-range: entry 0;
+    animation-timeline: view();
 }
 
 .issue .issue-section .item.item-4 .image-wrapper::after {
@@ -753,6 +828,9 @@
     left: 50px;
     bottom: -120px;
     z-index: -1;
+    animation: fadeIn linear;
+    animation-range: entry 0;
+    animation-timeline: view();
 }
 
 .issue .issue-section .item.item-4 .image-wrapper .image {
@@ -762,6 +840,9 @@
     background-position: center;
     clip-path: polygon(0 9%, 100% 0, 95% 100%, 0% 100%);
     width: 100%;
+    animation: fadeInFromLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
 
 .repair-service {
@@ -803,7 +884,7 @@
     justify-content: center;
     gap: 70px;
     margin: 50px 0;
-    
+
 }
 
 .repair-service .repair-service-section .cards p {

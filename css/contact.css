@@ -196,6 +196,33 @@
     margin: 10px 0;
 }
 
+.contact .contact-section .r-section .input-container select {
+    width: 100%;
+    padding: 15px;
+    font-family: Open Sans;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.contact .contact-section .r-section .input-container .gender {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact .contact-section .r-section .input-container .radio-input input {
+    display: block;
+    width: auto;
+}
+
+.contact .contact-section .r-section .input-container .radio-input {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: .9rem;
+}
+
 .contact .contact-section .r-section .input-container textarea {
     resize: none;
     height: 130px;
